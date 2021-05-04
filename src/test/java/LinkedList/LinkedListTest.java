@@ -1,12 +1,11 @@
 package LinkedList;
 
-import org.junit.Test;
-import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
+import org.junit.jupiter.api.Test;
 
-import static org.junit.Assert.*;
+import static org.junit.jupiter.api.Assertions.*;
 
- class LinkedListTest {
+class LinkedListTest {
 
     @Test
     @DisplayName("Can initialize a linked list")
@@ -115,9 +114,7 @@ import static org.junit.Assert.*;
 
         // ASSERT
         assertEquals(expected, actual);
-        assertThrows(Exception.class, () -> {
-            linkedList.get(6);
-        });
+        assertThrows(Exception.class, () -> linkedList.get(6));
     }
 
     @Test
@@ -176,7 +173,7 @@ import static org.junit.Assert.*;
         assertEquals(expected, actual);
     }
     @Test
-    @DisplayName("Throws IndexOutOfBounds exception if index greater than Linkedlist length")
+    @DisplayName("Throws IndexOutOfBounds exception if index greater than Linked list length")
     public void deleteByIndex_throwsIndexOutOfBoundsException_whenIndexGreaterThanLength() {
         LinkedList linkedlist = new LinkedList();
         linkedlist.add(new Node(1));

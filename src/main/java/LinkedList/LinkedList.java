@@ -75,6 +75,7 @@ public class LinkedList {
                 cur = cur.next;
                 idx--;
             }
+            assert cur.next != null;
             cur.next = cur.next.next;
         }
     }
@@ -84,13 +85,20 @@ public class LinkedList {
         }
         if(idx > 0) {
             Node cur = head;
-            while(idx > 1 && cur.next != null) {
-                cur = cur.next;
+            Node next = head.next;
+            while(idx - 1 > 1 && next != null) {
+                cur = next;
+                next = next.next;
                 idx--;
             }
-            if(idx == 1) {
-                cur.next = cur.next.next;
-            } else {
+            if(idx - 1 == 1) {
+                if(next.next == null) {
+                    cur.next = null;
+                }
+
+                cur.next = next.next;
+            }
+            else {
                 throw new IndexOutOfBoundsException();
             }
         }
