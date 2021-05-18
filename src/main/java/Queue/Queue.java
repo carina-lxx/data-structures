@@ -22,9 +22,16 @@ public class Queue {
             head = node;
         }
     }
+    public int getTail() {
+        return tail.getData();
+    }
 
-    public int remove() {
+    public int remove() throws Exception {
+        if(head == null) {
+            throw new Exception("Operation is invalid, Queue is empty");
+        }
         int data = head.getData();
+
         head = head.next;
         if(head == null) {
             tail = null;

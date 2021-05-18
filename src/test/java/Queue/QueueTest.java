@@ -25,8 +25,9 @@ public class QueueTest {
     @DisplayName("Should add a new node to the queue")
     void checkNodeAddedToQueue() {
         int expected = 6;
+        queue.add(8);
         queue.add(6);
-        int actual = queue.peek();
+        int actual = queue.getTail();
         assertEquals(expected, actual);
     }
 
@@ -43,13 +44,21 @@ public class QueueTest {
 
     @Test
     @DisplayName("Shoudl return the front node but not remove it")
-    void peekShouldMoveAndRtnFrontNode() {
+    void peekShouldMoveAndRtnFrontNode() throws Exception {
         int expected = 9;
         queue.add(9);
         queue.add(8);
         queue.add(7);
         int actual = queue.remove();
         assertEquals(expected, actual);
+    }
+
+    @Test
+    @DisplayName("Should throw exception when calling remove if queue is empty")
+    void removeShouldThrowExceptionWhenQueueIsEmpty() {
+        assertThrows(Exception.class, () -> {
+            queue.remove();
+        });
     }
 
 
