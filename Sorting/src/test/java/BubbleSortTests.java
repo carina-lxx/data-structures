@@ -20,4 +20,12 @@ public class BubbleSortTests {
         bubbleSort.bubblesort(array);
         assertEquals(0, array.length);
     }
+
+    @Test
+    void InputContainsOneElement_shouldReturn() {
+        int[] array = {4};
+        bubbleSort.bubblesort(array);
+        assertEquals(1, array.length);
+        assertEquals(4, array[0]);
+    }
 }
