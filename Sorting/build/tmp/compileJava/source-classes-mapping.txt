@@ -1,2 +1,4 @@
 QuickSort.java
  QuickSort
+MergeSort.java
+ MergeSort

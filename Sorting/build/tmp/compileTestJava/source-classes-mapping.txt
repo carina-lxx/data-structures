@@ -1,2 +1,4 @@
 QuickSortTests.java
  QuickSortTests
+MergeSortTests.java
+ MergeSortTests
