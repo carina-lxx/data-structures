@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="BubbleSortTests" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-05-18T21:21:15" hostname="Xiaos-MBP.hsd1.ca.comcast.net" time="0.029">
+<testsuite name="BubbleSortTests" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-05-18T21:32:16" hostname="Xiaos-MBP.hsd1.ca.comcast.net" time="0.022">
   <properties/>
-  <testcase name="InputContainsOneElement_shouldReturn()" classname="BubbleSortTests" time="0.029"/>
+  <testcase name="InputContainsMultipleElements_shouldReturnSortedList()" classname="BubbleSortTests" time="0.022"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
