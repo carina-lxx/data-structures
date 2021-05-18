@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="MergeSortTests" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-05-18T21:12:43" hostname="Xiaos-MBP.hsd1.ca.comcast.net" time="0.023">
-  <properties/>
-  <testcase name="InputContainsMultipleElement_shouldReturnOriginalArray()" classname="MergeSortTests" time="0.023"/>
-  <system-out><![CDATA[]]></system-out>
-  <system-err><![CDATA[]]></system-err>
-</testsuite>
